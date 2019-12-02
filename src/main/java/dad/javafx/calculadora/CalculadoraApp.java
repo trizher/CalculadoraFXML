@@ -11,6 +11,7 @@ public class CalculadoraApp extends Application {
 	@Override
 	public void start(Stage primaryStage) throws Exception {
 		calculadoraController = new CalculadoraController();
+		
 
 		Scene scene = new Scene(calculadoraController.getView());
 		primaryStage.setScene(scene);
