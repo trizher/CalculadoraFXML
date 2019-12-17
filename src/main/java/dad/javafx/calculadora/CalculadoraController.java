@@ -11,11 +11,12 @@ import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextArea;
 import javafx.scene.layout.GridPane;
+import javafx.scene.layout.VBox;
 
 public class CalculadoraController implements Initializable{
 	
     @FXML
-    private GridPane view;
+    private VBox view;
     
 	@FXML
     private TextArea resultadoText;
@@ -89,7 +90,7 @@ public class CalculadoraController implements Initializable{
 		resultadoText.textProperty().bind(calculadora.pantallaProperty());
 	}
 	
-	public GridPane getView() {
+	public VBox getView() {
 		return view;
 	}
     
